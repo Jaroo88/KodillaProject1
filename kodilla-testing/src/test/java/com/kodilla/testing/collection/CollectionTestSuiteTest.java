@@ -37,4 +37,18 @@ class CollectionTestSuiteTest {
         Assertions.assertEquals(List.of(),numbersList);
 
     }
+    @Test
+    void testOddNumbersExterminatorNormalList() {
+        OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
+        ArrayList<Integer> library = new ArrayList<>();
+        library.add(1);
+        library.add(2);
+        library.add(3);
+        library.add(4);
+        library.add(5);
+
+        List<Integer> numbersList = oddNumbersExterminator.exterminate(library);
+
+        Assertions.assertEquals(List.of(2, 4), numbersList);
+    }
 }
