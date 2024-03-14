@@ -13,7 +13,7 @@ public class streamMain {
         // Własny upiększacz 1: dodanie emotikonki na końcu tekstu
         poemBeautifier.beautify("Upiększacz", text -> text + " :)");
 
-        // Własny upiększacz 2: zamiana każdego "e" na "E"
+        // Własny upiększacz 2: zamiana każdego "z" na "Z"
         poemBeautifier.beautify("Upiększacz", text -> text.replace("z", "Z"));
     }
 }
