@@ -1,6 +1,6 @@
 import com.kodilla.stream.beautifier.PoemBeautifier;
 
-public class streamMain {
+public class StreamMain {
     public static void main(String[] args) {
 
         PoemBeautifier poemBeautifier = new PoemBeautifier();
