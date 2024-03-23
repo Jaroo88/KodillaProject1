@@ -20,7 +20,7 @@ public class FirstChallenge {
         } catch (ArithmeticException e) {
             System.out.println("Division by zero prohibited! " );
         } finally {
-            System.out.println("enter the correct parameters!");
+            System.out.println("Finish");
         }
     }
 }
