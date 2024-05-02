@@ -28,12 +28,10 @@ public class Calculator {
     }
 
     public void div(double a, double b) {
-        if (b != 0) {
-            double result = a / b;
-            display.displayValue(result);
-        } else {
-            System.out.println("Division by zero!");
-        }
+        double result = a / b;
+        display.displayValue(result);
+
+
     }
 }
 
