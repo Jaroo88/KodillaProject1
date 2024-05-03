@@ -9,17 +9,25 @@ public class CalculatorTestSuite {
     @Autowired
     private Calculator calculator;
 
+    @Autowired
+    private Display display;
+
     @Test
     public void testCalculations() {
         // Given
         double a = 10;
         double b = 5;
 
-        // When & Then
-        calculator.add(a, b);
-        calculator.sub(a, b);
-        calculator.mul(a, b);
-        calculator.div(a, b);
+        // When
+        double addResult = calculator.add(a, b);
+        double subResult = calculator.sub(a, b);
+        double mulResult = calculator.mul(a, b);
+        double divResult = calculator.div(a, b);
+
+        // Then
+        display.displayValue(addResult);
+        display.displayValue(subResult);
+        display.displayValue(mulResult);
+        display.displayValue(divResult);
     }
 }
-
