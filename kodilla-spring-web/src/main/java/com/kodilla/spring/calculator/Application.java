@@ -8,9 +8,9 @@ public class Application {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Calculator calculator = context.getBean(Calculator.class);
         calculator.add(2, 2);
-        calculator.div(25,5);
-        calculator.mul(100,25);
-        calculator.sub(80,40);
+        calculator.div(25, 5);
+        calculator.mul(100, 25);
+        calculator.sub(80, 40);
 
     }
 }

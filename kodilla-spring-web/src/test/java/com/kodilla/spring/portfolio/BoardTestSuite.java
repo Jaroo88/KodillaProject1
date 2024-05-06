@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationContext;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest(classes = BoardConfig.class)
+@SpringBootTest(classes = com.kodilla.spring.portfolio.BoardConfig.class)
 public class BoardTestSuite {
 
     @Autowired
@@ -16,7 +16,7 @@ public class BoardTestSuite {
     @Test
     public void testTaskAdd() {
         // Given
-        Board board = context.getBean(Board.class);
+        com.kodilla.spring.portfolio.Board board = context.getBean(com.kodilla.spring.portfolio.Board.class);
 
         // When
         board.getToDoList().getTasks().add("Task to do");
