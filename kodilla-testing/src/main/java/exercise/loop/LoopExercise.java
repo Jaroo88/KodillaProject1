@@ -14,6 +14,7 @@ public class LoopExercise {
                 break;
             }
         }
+        System.out.println();
 
         //Petla while
         int b = 1;                                  //implementujemy zmienna
@@ -21,6 +22,7 @@ public class LoopExercise {
             System.out.println("Coś tam " + b);     //wypisujemy tekst który ma sie powtarzac
             b++;                                    //implementujemy warunek dodawania
         }
+        System.out.println();
         //petla do while
         int c = 1;                                  //zmienna inicjalna
         do {                                        //petla i otwieramy ciało petli

@@ -1,7 +1,7 @@
 package exercise.classMethods;
 
 public class Car {
-    //gettery i settery ustawiamy za pomoca prawego przycisku myszy i funkcji GENRATE.
+    //gettery i settery ustawiamy za pomoca prawego przycisku myszy i funkcji GENERATE.
     //za pomocą getterów ustawiamy możliwość skorzystania z prywatnego pola w obcej klasie
     //za pomocą setterów mozemy zmienić dane danego pola w obcej klasie
 

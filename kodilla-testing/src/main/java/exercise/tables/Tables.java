@@ -34,5 +34,6 @@ public class Tables {
 
         System.out.println(months[8]+" "+cars[0]);              // tak wyswietlamy elementy z 2 różnych list
 
+
     }
 }

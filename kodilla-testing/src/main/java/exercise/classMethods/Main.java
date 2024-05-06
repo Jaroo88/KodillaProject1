@@ -47,5 +47,7 @@ public class Main {
         System.out.println("Przejechaliśmy już " + suv.kmTraveled(300, 27.5) + " km");
         System.out.println("Do celu pozostało " + suv.kmToTarget() + " km");
         suv.offEngine();
+        System.out.println(limuzyna.getWaga());
+
     }
 }
