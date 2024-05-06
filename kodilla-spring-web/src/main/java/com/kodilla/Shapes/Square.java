@@ -1,4 +1,4 @@
-package Shapes;
+package com.kodilla.Shapes;
 
 public class Square implements Shape {
     @Override
