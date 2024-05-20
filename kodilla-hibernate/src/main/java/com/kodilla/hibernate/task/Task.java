@@ -3,22 +3,24 @@ package com.kodilla.hibernate.task;
 import jakarta.persistence.*;
 import org.antlr.v4.runtime.misc.NotNull;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.Date;
 
 @Entity
 @Table(name = "TASKS")
 public class Task {
-    private int id;
+    private Integer id;
     private String description;
-    private Date created;
-    private int duration;
+    private LocalDate created;
+    private Integer duration;
 
     public Task() {
     }
 
-    public Task(String description, int duration) {
+    public Task(String description, Integer duration) {
         this.description = description;
-        this.created = new Date();
+        this.created = LocalDate.now();
         this.duration = duration;
     }
 
@@ -26,7 +28,7 @@ public class Task {
     @GeneratedValue
     @NotNull
     @Column(name = "ID", unique = true)
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -38,15 +40,15 @@ public class Task {
     @NotNull
     @Column(name="CREATED")
     public Date getCreated() {
-        return created;
+        return Date.from(created.atStartOfDay(ZoneId.systemDefault()).toInstant());
     }
 
     @Column(name="DURATION")
-    public int getDuration() {
+    public Integer getDuration() {
         return duration;
     }
 
-    private void setId(int id) {
+    private void setId(Integer id) {
         this.id = id;
     }
 
@@ -55,10 +57,10 @@ public class Task {
     }
 
     private void setCreated(Date created) {
-        this.created = created;
+        this.created = created.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
     }
 
-    private void setDuration(int duration) {
+    private void setDuration(Integer duration) {
         this.duration = duration;
     }
 }
